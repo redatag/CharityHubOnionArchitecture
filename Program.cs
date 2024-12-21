@@ -13,7 +13,7 @@ builder.Services.AddControllers(options =>
 {
     options.Filters.Add<GlobalExceptionHandler>();
 });
-builder.Services.AddTransient<ILogger, Logger>();
+builder.Services.AddTransient<ILogger,Logger>();
 
 var app = builder.Build();
 
